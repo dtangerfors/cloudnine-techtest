@@ -4,9 +4,8 @@ import Rating from "./Rating";
 
 const ListSalonItem = ({salon}) => {
    return (
-      <li key={salon.name}>
-         <button type="button" className="w-full block pl-4 pr-[30px] text-left">
-         <div className="flex border-b border-gray-200 py-4">
+      <li key={salon.name} className="w-full block pl-4 pr-[30px] text-left">
+         <a href="" className="flex border-b border-gray-200 py-4">
             <div className="pr-4">
                <p className="text-black text-[15px] leading-6 font-sans align-bottom">{salon.treatments.hair.nextAvailableTime}</p>
             </div>
@@ -28,8 +27,7 @@ const ListSalonItem = ({salon}) => {
             <div className="relative -mr-2 self-center">
                <img src={chevron_left} className="w-2"/>
             </div>
-         </div>
-         </button>
+         </a>
       </li>
    )
 }
