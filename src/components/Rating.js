@@ -3,7 +3,9 @@ import React from "react";
 import star_filled from "../images/icons/star-filled.svg";
 import star_outlined from "../images/icons/star-outlined.svg";
 
-const Rating = ({ rating }) => {
+const Rating = ({ rating, color, font_size, img_size }) => {
+
+
   return (
    <div className="flex items-center">
     <div className="flex star-rating mr-1">
@@ -13,14 +15,14 @@ const Rating = ({ rating }) => {
           let starImg = star_outlined, score = index + 1;
           if (score <= rating.totalScore) starImg = star_filled;
           return (
-            <span className="star">
+            <span key={`rating-${index}`} className="star">
               {" "}
-              <img src={starImg} />
+              <img src={starImg} width={img_size} />
             </span>
           );
         })}
     </div>
-    <span className="text-[11px] leading-3 text-gray-700">{` (${rating.ratedBy})`}</span>
+    <span className={`text-[${font_size}] font-light leading-3 ${color}`}>{` (${rating.ratedBy})`}</span>
     </div>
   );
 };
