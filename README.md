@@ -2,6 +2,8 @@
 
 Tech test made for Cloud Nine. The deployed app can be found [here](https://cloudnine-techtest.vercel.app/)!
 
+The app is built using React and Tailwind CSS. Due to the time given and my own schedule, I choose Tailwind for styling to be able to focus more on the code itself. Otherwise, if I had more time, I would have chosen Styled Components as for styling. :) 
+
 <!-- GETTING STARTED -->
 ## Getting Started
 ### Installation
