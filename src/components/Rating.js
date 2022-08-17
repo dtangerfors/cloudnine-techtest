@@ -22,7 +22,7 @@ const Rating = ({ rating, color, font_size, img_size }) => {
           );
         })}
     </div>
-    <span className={`text-[${font_size}] font-light leading-3 ${color}`}>{` (${rating.ratedBy})`}</span>
+    <span className={`${font_size} font-light leading-3 ${color}`}>{` (${rating.ratedBy})`}</span>
     </div>
   );
 };
