@@ -40,8 +40,8 @@ const SingleSalon = () => {
       <div className="flex flex-col justify-between w-full h-full max-w-screen-lg mx-auto">
       <div className="flex justify-between">
          <div>
-         <button onClick={() => navigate(-1)}><span className="sr-only">Go back</span> <img src={chevron_left_big}/></button></div>
-         <div><img src={heart}/></div>
+         <button onClick={() => navigate(-1)}><span className="sr-only">Go back</span> <img src={chevron_left_big}  alt=""/></button></div>
+         <div><img src={heart}  alt=""/></div>
       </div>
       <div>
          <h1 className="font-serif text-white text-2xl mb-2">{salon.name}</h1>
@@ -49,7 +49,7 @@ const SingleSalon = () => {
       </div>
       </div>
       <figure className="absolute -z-10 w-full h-full inset-0">
-         <img src={bg_image} className="w-full h-full object-cover" />
+         <img src={bg_image} className="w-full h-full object-cover"  alt="Background"/>
       </figure>
    </header>
    <div className="bg-white">
@@ -65,10 +65,10 @@ const SingleSalon = () => {
    <div className="bg-white mt-5 px-4 pb-6  max-w-screen-lg mx-auto">
       <div>
          <ul>
-            <li className="flex items-center text-[15px] font-sans font-light text-black py-4 border-b border-gray-100"><img src={address} className="w-4 inline-block mr-3"/><p>{salon.info.address.street}, {salon.info.address.postalNumber} {salon.info.address.postalCity}</p> </li>
-            <li className="flex items-center text-[15px] font-sans font-light text-black py-4 border-b border-gray-100"><img src={clock} className="w-4 inline-block mr-3"/><ShowOpenHours openingHours={salon.openingHours} /></li>
-            <li className="flex items-center text-[15px] font-sans font-light text-black py-4 border-b border-gray-100"><img src={phone} className="w-4 inline-block mr-3"/><a href={`tel:${salon.info.phoneNumber}`}>{salon.info.phoneNumber}</a> </li>
-            <li className="flex items-center text-[15px] font-sans font-light text-black py-4 border-b border-gray-100"><img src={website} className="w-4 inline-block mr-3"/><a href={salon.info.websiteURL} target="_blank">{salon.info.websiteURL}</a> </li>
+            <li className="flex items-center text-[15px] font-sans font-light text-black py-4 border-b border-gray-100"><img src={address} className="w-4 inline-block mr-3" alt=""/><p>{salon.info.address.street}, {salon.info.address.postalNumber} {salon.info.address.postalCity}</p> </li>
+            <li className="flex items-center text-[15px] font-sans font-light text-black py-4 border-b border-gray-100"><img src={clock} className="w-4 inline-block mr-3" alt=""/><ShowOpenHours openingHours={salon.openingHours} /></li>
+            <li className="flex items-center text-[15px] font-sans font-light text-black py-4 border-b border-gray-100"><img src={phone} className="w-4 inline-block mr-3" alt=""/><a href={`tel:${salon.info.phoneNumber}`}>{salon.info.phoneNumber}</a> </li>
+            <li className="flex items-center text-[15px] font-sans font-light text-black py-4 border-b border-gray-100"><img src={website} className="w-4 inline-block mr-3" alt=""/><a href={salon.info.websiteURL} target="_blank" rel="noreferrer">{salon.info.websiteURL}</a> </li>
          </ul>
       </div>
       <div className="pt-6">

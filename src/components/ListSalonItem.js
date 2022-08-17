@@ -26,7 +26,7 @@ const ListSalonItem = ({salon}) => {
                </div>
             </div>
             <div className="relative -mr-2 self-center">
-               <img src={chevron_left} className="w-2"/>
+               <img src={chevron_left} className="w-2"  alt=""/>
             </div>
          </Link>
       </li>

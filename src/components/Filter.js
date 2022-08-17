@@ -30,7 +30,7 @@ const Filter = ({ filterValue, setValue }) => {
           className="w-14 h-14 -mr-4 -mt-4 grid place-items-center"
           style={{ transform: open ? "rotate(180deg)" : "rotate(0)" }}
         >
-          <img src={chevron_down} className="w-[14px]" />
+          <img src={chevron_down} className="w-[14px]" alt=""/>
         </button>
       </div>
       <div

@@ -16,7 +16,7 @@ const Header = () => {
             className="h-[50px] w-[50px] grid place-items-center"
           >
             <span className="sr-only">Go back</span>{" "}
-            <img src={chevron_right} className="w-[10px]" />
+            <img src={chevron_right} className="w-[10px]"  alt=""/>
           </button>
         </div>
         <div>
@@ -25,7 +25,7 @@ const Header = () => {
         <div className="justify-self-end">
           <button className="ml-auto h-[50px] w-[50px] grid place-items-center">
             <span className="sr-only">Filter</span>{" "}
-            <img src={filter_icon} className="w-5" />
+            <img src={filter_icon} className="w-5"  alt=""/>
           </button>
         </div>
       </div>

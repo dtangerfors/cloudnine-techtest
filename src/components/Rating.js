@@ -16,7 +16,7 @@ const Rating = ({ rating, color, font_size, img_size }) => {
           return (
             <span key={`rating-${index}`} className="star">
               {" "}
-              <img src={starImg} width={img_size} />
+              <img src={starImg} width={img_size}  alt=""/>
             </span>
           );
         })}
