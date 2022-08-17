@@ -18,6 +18,10 @@ _To install this repo, please follow the guide below._
    ```sh
    npm install
    ```
+3. To start the application in development mode:
+```sh
+npm start
+```
 
 ## Built With
 
