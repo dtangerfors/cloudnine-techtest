@@ -4,7 +4,6 @@ import chevron_down from "../images/icons/chevron.down.svg";
 
 const ShowOpenHours = ({openingHours}) => {
 
-   const weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
    const d = new Date();
    const day = d.getDay();
    let tomorrow = day < 6 ? day + 1 : 0;
@@ -31,7 +30,7 @@ const ShowOpenHours = ({openingHours}) => {
    let textString = isOpen ? `Open until ${endTime} today` : `Opens ${openingHours[tomorrow].opens} tomorrow`;
 
    return <div className="flex">
-      <p>{textString}</p> <img src={chevron_down} className="w-[14px] ml-4" />
+      <p>{textString}</p> <img src={chevron_down} className="w-[14px] ml-4"  alt=""/>
    </div>
 
 }
