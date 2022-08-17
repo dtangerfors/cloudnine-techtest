@@ -1,6 +1,6 @@
 # Daniel Tängerfors – Tech test @ Cloud Nine
 
-Tech test made for Cloud Nine. 
+Tech test made for Cloud Nine. The deployed app can be found [here](https://cloudnine-techtest.vercel.app/)!
 
 <!-- GETTING STARTED -->
 ## Getting Started
