@@ -10,7 +10,7 @@ const List = () => {
   return (
     <>
       <Header />
-      <main className="pt-[50px]">
+      <main className="pt-[50px] bg-gray-100 min-h-screen">
         <Filter filterValue={value} setValue={setValue} />
         <ListSalons filterValue={value} />
       </main>

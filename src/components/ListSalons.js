@@ -45,7 +45,7 @@ const ListSalons = ({filterValue}) => {
 
 
    return (
-      <ul className="flex flex-col">
+      <ul className="flex flex-col bg-white max-w-screen-lg mx-auto h-full pb-4">
          {filteredSalons.map(salon => {
          return <ListSalonItem salon={salon} key={salon.name} />
       })}

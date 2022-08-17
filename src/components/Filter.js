@@ -19,23 +19,26 @@ const Filter = ({ filterValue, setValue }) => {
       the handle, the price range is sent to the state in the 
       List view, this to prevent to many re-renders on the list. */
   return (
-    <div className="sticky z-10 top-[50px] h-14 flex justify-between p-4 bg-white border-b border-primary">
-      <div className="font-sans font-light text-[15px]">
-        Price <span>${filterValue.min}</span> - <span>${filterValue.max}</span>
+    <div className="sticky z-10 top-[50px] h-14 p-4 bg-white border-b border-primary">
+      <div className="flex justify-between max-w-screen-lg mx-auto">
+        <div className="font-sans font-light text-[15px]">
+          Price <span>${filterValue.min}</span> - <span>${filterValue.max}</span>
+        </div>
+        <button
+          onClick={() => setOpen(!open)}
+          type="button"
+          className="w-14 h-14 -mr-4 -mt-4 grid place-items-center"
+          style={{ transform: open ? "rotate(180deg)" : "rotate(0)" }}
+        >
+          <img src={chevron_down} className="w-[14px]" />
+        </button>
       </div>
-      <button
-        onClick={() => setOpen(!open)}
-        type="button"
-        className="w-14 h-14 -mr-4 -mt-4 grid place-items-center"
-        style={{ transform: open ? "rotate(180deg)" : "rotate(0)" }}
-      >
-        <img src={chevron_down} className="w-[14px]" />
-      </button>
       <div
         className={`absolute z-10 w-full top-14 left-0 p-8 bg-white after:bg-gradient-to-b from-black/10 to-black/0 after:w-full after:h-32 after:block after:absolute after:left-0 after:-bottom-32 ${
           open ? "block" : "hidden"
         }`}
       >
+        <div className="flex justify-between max-w-screen-lg mx-auto">
         <InputRange
           formatLabel={(value) => `$${value}`}
           maxValue={100}
@@ -44,6 +47,7 @@ const Filter = ({ filterValue, setValue }) => {
           onChange={(value) => setFilterData({ isFiltered: true, ...value })}
           onChangeComplete={() => setValue(filterData)}
         />
+        </div>
       </div>
     </div>
   );

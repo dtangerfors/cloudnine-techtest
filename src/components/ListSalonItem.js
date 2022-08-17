@@ -11,9 +11,9 @@ const ListSalonItem = ({salon}) => {
                <p className="text-black text-[15px] leading-6 font-sans align-bottom">{salon.treatments.hair.nextAvailableTime}</p>
             </div>
             <div className="flex-1 pr-4">
-               <h2 className="font-serif text-black text-xl leading-6">{salon.name}</h2>
-               <div>
-                  <Rating rating={salon.rating} color="text-gray-700" font_size="11px" img_size="10" />
+               <h2 className="font-serif text-black text-xl leading-6 pb-2">{salon.name}</h2>
+               <div className="pb-2">
+                  <Rating rating={salon.rating} color="text-gray-700" font_size="text-[11px]" img_size="10" />
                </div>
                <p className="font-sans text-[15px] leading-5 font-light text-gray-700">{salon.info.address.street}</p>
             </div>
