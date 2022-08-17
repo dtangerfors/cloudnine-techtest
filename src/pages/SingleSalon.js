@@ -45,7 +45,7 @@ const SingleSalon = () => {
       </div>
       <div>
          <h1 className="font-serif text-white text-2xl mb-2">{salon.name}</h1>
-         <Rating rating={salon.rating} color="text-white" font_size="13px" img_size="14"/>
+         <Rating rating={salon.rating} color="text-white" font_size="text-[13px]" img_size="14"/>
       </div>
       </div>
       <figure className="absolute -z-10 w-full h-full inset-0">
