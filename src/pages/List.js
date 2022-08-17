@@ -5,6 +5,7 @@ import Filter from "../components/Filter";
 import ListSalons from "../components/ListSalons";
 
 const List = () => {
+  // State used to store filter values which is passed the child components
   const [value, setValue] = useState({ min: 25, max: 50, isFiltered: false });
   return (
     <>
